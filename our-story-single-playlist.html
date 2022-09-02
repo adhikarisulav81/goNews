@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>Contact | GoNews</title>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/ticker-style.css" />
+    <link href="assets/css/poppins_font.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Header
+		    ================================================== -->
+        <header class="clearfix">
+            <!-- navbar -->
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+
+                <!-- Top line -->
+                <div class="top-line">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <ul class="top-line-list">
+                                    <li>
+                                        <span class="city-weather">Kathmandu, Nepal</span>
+                                        <span class="cel-temperature"><i class="fa fa-cloud"></i></span>
+                                    </li>
+                                    <li><span class="time-now"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;
+                                            <a href="" class="display"></a>
+                                        </span>
+                                        <script>
+                                            setInterval(function () {
+                                                const clock = document.querySelector(".display");
+                                                let time = new Date();
+                                                let sec = time.getSeconds();
+                                                let min = time.getMinutes();
+                                                let hr = time.getHours();
+                                                let day = 'AM';
+                                                if (hr > 11) {
+                                                    day = 'PM'
+                                                    hr = hr - 12;
+                                                }
+                                                if (hr == 0) {
+                                                    hr = 12;
+                                                }
+                                                if (sec < 10) {
+                                                    sec = '0' + sec;
+                                                }
+                                                if (min < 10) {
+                                                    min = '0' + min;
+                                                }
+                                                if (hr < 10) {
+                                                    hr = '0' + hr;
+                                                }
+                                                clock.textContent = hr + ' : ' + min + ' : ' + sec + ' : ' + day;
+                                            });
+
+                                        </script>
+
+                                    </li>
+                                    <li><a href="login-register.html">Log In</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="social-icons">
+                                    <a href="#" class="read-more-button"><img src="assets/images/nepali.png" alt=""
+                                            style="width:18px; height:18px;">NP</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top line -->
+
+                <!-- Logo & advertisement -->
+                <div class="logo-advertisement">
+                    <div class="container">
+
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                        </div>
+
+                        <div class="advertisement">
+                            <div class="desktop-advert">
+                                <span>Advertisement</span>
+                                <img src="assets/images/adsense/728x90.jpg" alt="">
+                            </div>
+                            <div class="tablet-advert">
+                                <span>Advertisement</span>
+                                <img src="assets/images/adsense/468x60.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Logo & advertisement -->
+
+                <!-- navbar list container -->
+                <div class="nav-list-container">
+                    <div class="container">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+
+                                <li class="drop"><a class="home" href="index.html">Home </a>
+                                </li>
+
+                                <li><a class="world" href="category.html">World</a>
+                                </li>
+
+                                <li><a class="travel" href="category.html">Travel</a>
+                                </li>
+
+                                <li><a class="tech" href="category.html">Tech</a>
+                                </li>
+
+                                <li><a class="story" href="our-story-category.html">Our Story</a></li>
+
+                                <li><a class="video" href="video-post.html">Video</a>
+                                </li>
+
+                                <li><a class="sport" href="category.html">Sport</a></li>
+                                <li><a class="food" href="category.html">Food &amp; Health</a></li>
+                                <li class="drop"><a class="features" href="#">More &nbsp;<strong><i
+                                                class="fa fa-angle-down"></i></strong></a>
+                                    <ul class="dropdown features-dropdown">
+                                        <li class="drop"><a href="#">Category</a>
+                                            <ul class="dropdown level2">
+                                                <li><a href="category.html">3 Grid Category</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="drop"><a href="#">Post</a>
+                                            <ul class="dropdown level2">
+                                                <li><a href="single-post.html">Single Post</a></li>
+                                                <li><a href="video-post.html">Video Post</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="404-error.html">404 Error</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <form class="navbar-form navbar-right" role="search">
+                                <input type="text" id="search" name="search" placeholder="Search here">
+                                <button type="submit" id="search-submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <!-- /.navbar-collapse -->
+
+                    </div>
+                </div>
+                <!-- End navbar list container -->
+            </nav>
+
+            <!-- End navbar -->
+
+        </header>
+        <!-- End Header -->
+
+        <!-- block-wrapper-section
+			================================================== -->
+        <section class="block-wrapper">
+            <div class="container playlist">
+
+                <div class="main-video-playlist">
+                    <video src="assets/video/vid-1.mp4" loop controls class="main-video"></video>
+                    <h3 class="main-vid-title">house flood animation</h3>
+                    <p>Along with the advancement of information and communication
+                        technologies, banks and financial institutions (BFIs) are providing
+                        various types of digital banking services. The mobile banking
+                        service is the most popular form of this.</p>
+                </div>
+
+                <div class="video-list-playlist">
+
+                    <div class="list active">
+                        <video src="assets/video/vid-1.mp4" class="list-video"></video>
+                        <h3 class="list-title">house flood animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-2.mp4" class="list-video"></video>
+                        <h3 class="list-title">zoombie walking animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-3.mp4" class="list-video"></video>
+                        <h3 class="list-title">emoji falling animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-4.mp4" class="list-video"></video>
+                        <h3 class="list-title">3D town animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-5.mp4" class="list-video"></video>
+                        <h3 class="list-title">man chasing carrot animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-6.mp4" class="list-video"></video>
+                        <h3 class="list-title">door hinge animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-7.mp4" class="list-video"></video>
+                        <h3 class="list-title">poeple walking in town animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-8.mp4" class="list-video"></video>
+                        <h3 class="list-title">knight chasing virus animation</h3>
+                    </div>
+
+                    <div class="list">
+                        <video src="assets/video/vid-9.mp4" class="list-video"></video>
+                        <h3 class="list-title">3D helicopter animation</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- custom js file link  -->
+            <script>
+                let videoList = document.querySelectorAll('.video-list-playlist .list');
+
+                videoList.forEach(vid => {
+                    vid.onclick = () => {
+                        videoList.forEach(remove => { remove.classList.remove('active') });
+                        vid.classList.add('active');
+                        let src = vid.querySelector('.list-video').src;
+                        let title = vid.querySelector('.list-title').innerHTML;
+                        document.querySelector('.main-video-playlist .main-video').src = src;
+                        document.querySelector('.main-video-playlist .main-video').play();
+                        document.querySelector('.main-video-playlist .main-vid-title').innerHTML = title;
+                    };
+                });
+            </script>
+
+
+    </div>
+    </section>
+    <!-- End block-wrapper-section -->
+
+    <!-- footer 
+			================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-widgets-part">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="widget text-widget">
+                            <h1>About Go News</h1>
+                            <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                            <p>Go News is a News Portal website
+                                that delivers the information happening
+                                around the globe. </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="widget posts-widget">
+                            <h1>Random Post</h1>
+                            <ul class="list-posts">
+                                <li>
+                                    <img src="assets/images/pictures/100x80/china-dashain-affect.jpg" alt="">
+                                    <div class="post-content">
+                                        <h2><a href="single-post.html">China’s border closure may affect
+                                                Dashain shopping across Nepal. </a></h2>
+                                        <ul class="post-tags">
+                                            <li><i class="fa fa-clock-o"></i>27 may 2022</li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/pictures/100x80/chandra-dhakal.jpg" alt="">
+                                    <div class="post-content">
+                                        <h2><a href="single-post.html">Indian businesses urged to invest in
+                                                Nepal hydropower, tourism. </a></h2>
+                                        <ul class="post-tags">
+                                            <li><i class="fa fa-clock-o"></i>27 may 2022</li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/pictures/100x80/nepal-eu-support.jpg" alt="">
+                                    <div class="post-content">
+                                        <h2><a href="single-post.html">Nepal preparing a new trade
+                                                integration strategy with the EU support. </a></h2>
+                                        <ul class="post-tags">
+                                            <li><i class="fa fa-clock-o"></i>27 may 2022</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="widget categories-widget">
+                            <h1>Popular Categories</h1>
+                            <ul class="category-list">
+                                <li>
+                                    <a href="#">Business <span>12</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Sport <span>26</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">LifeStyle <span>55</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Fashion <span>37</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Technology <span>62</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Music <span>10</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Culture <span>43</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Design <span>74</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Entertainment <span>11</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">video <span>41</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Travel <span>11</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">Food <span>29</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="widget social-widget">
+                            <h1>Stay Connected</h1>
+                            <ul class="social-icons">
+                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <!-- <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+										<li><a href="#" class="dribble"><i class="fa fa-dribbble"></i></a></li>
+										<li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+										<li><a href="#" class="flickr"><i class="fa fa-flickr"></i></a></li>
+										 -->
+                            </ul>
+
+                        </div>
+                        <div class="widget tags-widget">
+
+
+                            <h1><span>Popular Tags</span></h1>
+
+
+                            <ul class="tag-list">
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Politics</a></li>
+                                <li><a href="#">Sport</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">World</a></li>
+                                <li><a href="#">Music</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-last-line">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Copyright © <strong id="test"></strong>
+                            <script
+                                type="text/JavaScript"> var theDate=new Date(); document.getElementById("test").innerHTML = theDate.getFullYear() </script>
+                            <a href="#" target="_blank" style="text-decoration: none; color: white;">
+                                Go News. </a>
+                            Designed and Developed by <a href="#" target="_blank"
+                                style="text-decoration: none; color: white;">
+                                IT Nepal Solutions. </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <a href="#" class="read-more-button"><img src="assets/images/nepali.png" alt=""
+                                        style="width:18px; height:18px;">NP</a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-floating btn-sm" title="Back To Top" id="btn-back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+    </div>
+    <!-- End Container -->
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.migrate.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.ticker.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.imagesloaded.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/retina-1.1.0.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/back-to-top-btn.js"></script>
+
+</body>
+
+</html>
