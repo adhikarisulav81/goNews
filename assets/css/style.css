@@ -1,7 +1,7 @@
 /* Basic Styles */
 *{
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -22,7 +22,7 @@ html{
 
   --gray: #666666;
   --dark-gray: #444444;
-  --lightgray: #666666;
+  --lightgray: #8f8e8e;
   --white: #fff;
   --lightwhite: #f0f0f0;
   --black: #000;
@@ -1456,7 +1456,7 @@ section.feature-video .owl-theme .owl-controls .owl-buttons div.owl-next:hover:a
 }
 .sidebar .subscribe-widget form p {
   font-size: 12px;
-  color: var(--lightgray);
+  color: var(--white);
   margin: 14px 0 0;
   line-height: 16px;
 }
@@ -1729,7 +1729,7 @@ form.search-form button {
   right: 13px;
   padding: 0;
   font-size: 13px;
-  color: var(--gray);
+  color: var(--white);
 }
 /*-------------------------------------------------*/
 /* News posts style
@@ -2488,7 +2488,7 @@ ul.list-posts > li .post-content h2 a:hover {
 .single-post-box > .post-content blockquote {
   padding: 20px;
   padding-left: 70px;
-  background: var(--lightgray);
+  background: var(--lightwhite);
   border: none;
   margin: 0 0 20px;
   position: relative;
@@ -3072,8 +3072,8 @@ ul.list-posts > li .post-content h2 a:hover {
   display: block;
   width: 100%;
   padding: 10px 20px;
-  background: var(--white);
-  color: var(--gray);
+  background: var(--lightwhite);
+  color: var(--black);
   font-size: 13px;
   font-family: "Poppins", sans-serif;
   outline: none;
@@ -3088,7 +3088,8 @@ ul.list-posts > li .post-content h2 a:hover {
 .contact-form-box #comment-form input[type="text"]:focus,
 .contact-form-box #contact-form textarea:focus,
 .contact-form-box #comment-form textarea:focus {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--secondary);
+  box-shadow: 0 2px 4px var(--secondary);
 }
 .contact-form-box #contact-form textarea,
 .contact-form-box #comment-form textarea {
@@ -3096,7 +3097,7 @@ ul.list-posts > li .post-content h2 a:hover {
 }
 .contact-form-box #contact-form button,
 .contact-form-box #comment-form button {
-  color: var(--lightgray);
+  color: var(--white);
   font-size: 11px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -3165,32 +3166,31 @@ div.search-box {
 /* Footer
 /*-------------------------------------------------*/
 footer {
-  background: var(--secondary); 
+  background: #222; 
   /* background: var(--dark-gray); */
-  color: var(--black);
+  color: var(--white);
   padding-top: 62px;
 }
 footer .footer-widgets-part {
   padding-bottom: 25px;
 }
 footer h1 {
-  color: var(--black);
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
   font-size: 16px;
   padding-bottom: 25px;
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: 1px solid var(--lightgray);
   margin-bottom: 25px;
-  color: var(--black);
+  color: var(--lightwhite);
   letter-spacing: 1.4px;
 }
 footer .widget {
   margin-bottom: 20px;
 }
 footer .widget p {
-  color: var(--black);
+  color: var(--lightgray);
   font-weight: 600;
   letter-spacing: 0.3px;
 }
@@ -3227,8 +3227,8 @@ footer .social-widget ul.social-icons li a {
   height: 35px;
   line-height: 34px;
   text-align: center;
-  border: 1px solid var(--dark-gray);
-  color: var(--black);
+  border: 1px solid var(--lightgray);
+  color: var(--lightgray);
   font-size: 20px;
   background: transparent;
   -webkit-border-radius: 2px;
@@ -3237,7 +3237,7 @@ footer .social-widget ul.social-icons li a {
   border-radius: 2px;
 }
 footer .social-widget ul.social-icons li a:hover {
-  color: var(--black);
+  color: var(--white);
 }
 footer .social-widget ul.social-icons li a.facebook:hover {
   background: #4267B2;
@@ -3290,7 +3290,7 @@ footer .posts-widget ul.list-posts > li .post-content > a {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   display: block;
-  color: var(--black);
+  color: var(--lightgray);
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   font-style: italic;
@@ -3308,14 +3308,14 @@ footer .posts-widget ul.list-posts > li .post-content h2 {
   overflow: hidden;
 }
 footer .posts-widget ul.list-posts > li .post-content h2 a {
-  color: var(--black);
+  color: var(--lightgray);
 }
 footer .posts-widget ul.list-posts > li .post-content h2 a:hover {
-  color: var(--black);
+  color: var(--white);
 }
 
 footer ul.post-tags li, footer ul.post-tags i {
-  color: var(--black);
+  color: var(--lightgray);
 }
 
 footer .categories-widget ul.category-list {
@@ -3337,12 +3337,12 @@ footer .categories-widget ul.category-list li a {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   display: block;
-  color: var(--black);
+  color: var(--lightgray);
   font-size: 13px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   padding-bottom: 15px;
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: 1px solid var(--lightgray);
 }
 footer .categories-widget ul.category-list li a span {
   display: inline-block;
@@ -3351,7 +3351,7 @@ footer .categories-widget ul.category-list li a span {
   height: 20px;
   text-align: center;
   line-height: 18px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--lightgray);
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
@@ -3362,13 +3362,13 @@ footer .categories-widget ul.category-list li a span {
   -o-transition: all 0.2s ease-in-out;
 }
 footer .categories-widget ul.category-list li a:hover {
-  color: var(--primary);
+  color: var(--white);
   margin-right: 3px;
 }
 footer .categories-widget ul.category-list li a:hover span {
   background: var(--primary);
   border: 1px solid var(--primary);
-  color: var(--black);
+  color: var(--white);
 }
 footer .categories-widget ul.category-list li:nth-child(2n) {
   padding-left: 9px;
@@ -3389,11 +3389,11 @@ footer .tags-widget ul.tag-list li a {
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  color: var(--black);
+  color: var(--lightgray);
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   padding: 6px 10px;
-  border: 1px solid var(--dark-gray);
+  border: 1px solid var(--lightgray);
   background: transparent;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -3401,7 +3401,7 @@ footer .tags-widget ul.tag-list li a {
   border-radius: 3px;
 }
 footer .tags-widget ul.tag-list li a:hover {
-  color: var(--black);
+  color: var(--white);
   background: var(--primary);
   border: 1px solid var(--primary);
 }
@@ -3411,7 +3411,7 @@ footer .subscribe-widget form {
   padding: 17px 20px;
 }
 footer .subscribe-widget form h1 {
-  color: var(--black);
+  color: var(--lightgray);
   margin-bottom: 16px;
   padding: 0;
   border: none;
@@ -3419,7 +3419,7 @@ footer .subscribe-widget form h1 {
 footer .subscribe-widget form input[type="text"] {
   outline: none;
   padding: 12px;
-  color: var(--black);
+  color: var(--lightgray);
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   background: var(--black);
@@ -3435,13 +3435,13 @@ footer .subscribe-widget form button {
   border: none;
   outline: none;
   line-height: 40px;
-  color: var(--black);
+  color: var(--white);
   font-size: 30px;
   float: right;
   margin-top: -42px;
 }
 footer .subscribe-widget form p {
-  color: var(--black);
+  color: var(--lightgray);
   margin: 0;
   font-size: 12px;
   line-height: 15px;
@@ -3450,11 +3450,11 @@ footer .subscribe-widget form p {
 
 footer .footer-last-line {
   padding: 30px 0;
-  border-top: 1px solid var(--dark-gray);
+  border-top: 1px solid var(--lightgray);
 }
 footer .footer-last-line p {
   font-size: 12px;
-  color: var(--black);
+  color: var(--lightgray);
 }
 footer .footer-last-line nav.footer-nav {
   text-align: right;
@@ -3474,25 +3474,26 @@ footer .footer-last-line nav.footer-nav ul li a {
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  color: var(--black);
+  color: var(--white);
   font-size: 12px;
   font-family: "Poppins", sans-serif;
 }
 footer .footer-last-line nav.footer-nav ul li a:hover {
-  color: var(--black);
+  color: var(--white);
 }
 footer .footer-last-line nav.footer-nav ul li:first-child {
   margin-left: 0;
 }
 footer .footer-last-line nav.footer-nav ul li:before {
-  /* content: '|'; */
-  margin-right: 13px;
-  color: var(--black);
+  content: '|';
+  margin-right: 12px;
+  color: var(--lightgray);
   font-size: 12px;
   font-family: "Poppins", sans-serif;
 }
 footer .footer-last-line nav.footer-nav ul li:first-child:before {
-  display: inline-block;
+  /* content: '|'; */
+  display: none;
   margin-right: 0;
 }
 
@@ -3843,12 +3844,13 @@ transition: 0.6s;
    flex-wrap: wrap;
    align-items: flex-start;
    gap:20px;
+
 }
 
 .playlist .main-video-playlist{
    flex:1 1 700px;
-   border-radius: 5px;
-   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   border-radius: 20px;
+   box-shadow: 0 5px 15px var(--black);
    background-color: var(--white);
    padding:15px;
 }
@@ -3860,16 +3862,18 @@ transition: 0.6s;
 }
 
 .playlist .main-video-playlist .main-vid-title{
-   font-size: 20px;
-   color:var(--dark-gray);
+   font-size: 22px;
+   /* text-transform: capitalize; */
+   color:var(--black);
 }
 
 .playlist .video-list-playlist{
    flex:1 1 350px;
-   height: 485px;
+   height: 600px;
    overflow-y: scroll;
    border-radius: 5px;
-   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   box-shadow: 0 5px 15px var(--black);
+   /* box-shadow: 0 5px 15px rgba(0,0,0,.1); */
    background-color: var(--white);
    padding:15px;
 }
@@ -3904,7 +3908,7 @@ transition: 0.6s;
 }
 
 .playlist .video-list-playlist .list.active{
-   background-color: var(--dark-gray);
+   background-color: var(--post-quaternary);
 }
 
 .playlist .video-list-playlist .list.active .list-title{
@@ -3913,7 +3917,7 @@ transition: 0.6s;
 
 .playlist .video-list-playlist .list .list-video{
    width: 100px;
-   border-radius: 5px;
+   border-radius: 4px;
 }
 
 .playlist .video-list-playlist .list .list-title{
@@ -3949,3 +3953,91 @@ transition: 0.6s;
    }
 }
 /* end video playlist */
+
+
+/* login-register form */
+      .half,
+      .half .container>.row {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: 767.98px) {
+        .half .bg {
+          width: 100%;
+          height: 200px;
+        }
+      }
+
+      .half .contents {
+        width: 75%;
+      }
+
+      @media (max-width: 767.98px) {
+        .half .contents {
+          width: 100%;
+        }
+      }
+
+      .half .contents .form-control,
+      .half .bg .form-control {
+        border: none;
+        border-radius: 4px;
+        height: 54px;
+        background: var(--lightwhite);
+      }
+
+      .half a {
+        color: var(--lightgray);
+        text-decoration: none;
+      }
+      .half a:hover {
+        transition: 0.6s;
+        color: var(--black);
+      }
+
+      .form-block {
+        background: var(--white);
+        padding: 40px;
+        max-width: 500px;
+        -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 767.98px) {
+        .form-block {
+          padding: 25px;
+        }
+      }
+
+      .btn {
+        margin-top: 25px;
+        /* text-decoration: none !important; */
+      }
+
+      .btn.btn-back,
+      .btn.btn-login {
+        display: block;
+        background: var(--post-quaternary);
+        color: var(--white);
+      }
+
+      .btn.btn-back:hover,
+      .btn.btn-login:hover {
+        display: block;
+        background: var(--primary);
+        transition: 0.8s;
+        color: var(--white);
+      }
+
+      .btn.btn-google {
+        background: var(--black);
+        color: var(--white);
+      }
+
+      .btn.btn-google:hover {
+        transition: 1s;
+        color: var(--white);
+        background: var(--danger);
+      }
+/* end login-register form */
